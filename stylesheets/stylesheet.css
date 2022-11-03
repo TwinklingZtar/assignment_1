@@ -1,0 +1,29 @@
+body{
+    display: grid;
+    grid-template-columns: 1fr 4fr;  
+}
+aside{
+    grid-column: 1/2;
+    display: grid;
+    grid-template-rows: 50px;
+}
+.note_list{
+    display: grid;
+    grid-template-rows: 20px;
+    grid-auto-rows: 20px;
+    padding: 20px;
+}
+.note{
+text-align: left;
+}
+aside h2{
+   
+   padding: 20px;
+   grid-row: 1/2;
+   font-size: 120%;
+   
+    
+}
+.note_taker{
+    grid-column: 2/3;
+}
