@@ -16,14 +16,43 @@ aside{
 .note{
 text-align: left;
 }
+h1{
+    text-align: center;
+}
 aside h2{
    
    padding: 20px;
    grid-row: 1/2;
    font-size: 120%;
-   
-    
 }
+nav{
+    display: flex;
+    flex: 1 1 10%;
+    flex-flow: row-reverse;
+}
+nav a{
+    padding: 10px;
+}
+
 .note_taker{
     grid-column: 2/3;
+}
+textarea{
+    width: 98%;
+    margin: 10px;
+}
+
+.newnote-darktheme{
+    display: flex;
+    width: 100%;
+}
+.darktheme{
+    margin-left: auto;
+}
+.save-cancel{
+    display: flex;
+    justify-content: flex-end;
+}
+footer{
+    text-align: center;
 }
