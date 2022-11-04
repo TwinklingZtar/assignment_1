@@ -9,6 +9,7 @@ aside{
     display: grid;
     grid-template-rows: 50px;
     background-color: #F9F3EC;
+    height: 100rem;
 }
 .note_list{
     display: grid;
