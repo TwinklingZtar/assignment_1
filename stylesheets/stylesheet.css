@@ -1,11 +1,14 @@
 body{
     display: grid;
-    grid-template-columns: 1fr 4fr;  
+    grid-template-columns: 1fr 4fr;
+    background-color: #f8e2c9;
+    margin: 0;  
 }
 aside{
     grid-column: 1/2;
     display: grid;
     grid-template-rows: 50px;
+    background-color: #F9F3EC;
 }
 .note_list{
     display: grid;
@@ -29,6 +32,7 @@ nav{
     display: flex;
     flex: 1 1 10%;
     flex-flow: row-reverse;
+    width: 100%;
 }
 nav a{
     padding: 10px;
@@ -45,6 +49,9 @@ textarea{
 .newnote-darktheme{
     display: flex;
     width: 100%;
+    padding: 10px 10px;
+    width: 98%;
+    ;
 }
 .darktheme{
     margin-left: auto;
@@ -55,4 +62,10 @@ textarea{
 }
 footer{
     text-align: center;
+}
+.new_note_button{
+
+}
+.docs_link{
+    padding: 10px 0;
 }
