@@ -42,9 +42,8 @@ nav{
     flex-flow: row-reverse;
     width: 100%;
 }
-nav a{
-    margin: 0 10px;
-    
+nav a{ 
+    font-size: .85em;
 }
 
 .note_taker{
@@ -89,7 +88,7 @@ background-color: #5394A0;
 color:#F9F3EC;
 }
 .docs_link{
-    padding: 10px 0;
+    padding: 0px 10px;
 }
 .save_button{
 
