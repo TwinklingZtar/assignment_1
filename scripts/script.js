@@ -2,7 +2,7 @@ const darkThemeButton = document.querySelector(".darktheme");
 const documentBody = document.querySelector("body")
 const documentAside = document.querySelector("aside")
 const textArea = document.querySelector("textarea")
-const newNoteButton = document.querySelector(".new_note_button")
+const newnoteButton = document.querySelector(".new_note_button")
 const saveButton = document.querySelector(".save_button")
 const cancelButton = document.querySelector(".cancel_button")
 
@@ -15,7 +15,7 @@ function activateDarkMode() {
     documentAside.classList.toggle("asideDarkTheme")
     textArea.classList.toggle("textAreaDarkTheme")
     darkThemeButton.classList.toggle("darkthemeDarkTheme")
-    newNoteButton.classList.toggle("newnotebuttonDarkTheme")
+    newnoteButton.classList.toggle("newnotebuttonDarkTheme")
     saveButton.classList.toggle("savebuttonDarkTheme")
     cancelButton.classList.toggle("cancelbuttonDarkTheme")
 
@@ -26,10 +26,18 @@ function activateDarkMode() {
     }
     
 };
-cancelButton.attributes.removeNamedItem("hidden")
-cancelButton.addEventListener("click", hidethestuff)
-function hidethestuff() {
+cancelButton.addEventListener("click", hideTheStuff)
+function hideTheStuff() {
     cancelButton.setAttribute("hidden", "hidden");
     textArea.setAttribute("hidden", "hidden");
     saveButton.setAttribute("hidden", "hidden");
 };
+
+
+newnoteButton.addEventListener("click", createNewNote) 
+function createNewNote() {
+    cancelButton.removeAttribute("hidden")
+    saveButton.removeAttribute("hidden")
+    textArea.removeAttribute("hidden")
+    textArea.value = ""
+}
