@@ -78,6 +78,7 @@ function saveNote() {
 }
 
 function loadNote(event) {
+    createNewNote()
     for (let note of notesArray) {
         if (note.title === event.target.innerText) {
             textArea.value = note.body
