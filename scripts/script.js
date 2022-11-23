@@ -8,7 +8,8 @@ const cancelButton = document.querySelector(".cancel_button")
 const aTags = document.querySelectorAll("a")
 const noteList = document.querySelector(".note_list")
 
-let notesArray = [{title:"note one", body:"this is my first note"}]
+
+let notesArray = [{title:"Note 1", body:"this is my first note"}, {title:"Note 2", body:"this is my second note"}]
 
 
 
@@ -70,11 +71,18 @@ saveButton.addEventListener("click", saveNote)
 function saveNote() {
     let noteName = prompt("What would you like to call this note?")
     notesArray.push({title: noteName, body: textArea.value})
-    console.log(notesArray)
     let newListItem = document.createElement("li")
     let newContent = document.createTextNode(noteName)
     newListItem.appendChild(newContent)
     noteList.appendChild(newListItem)
-
 }
 
+function loadNote(event) {
+    for (let note of notesArray) {
+        if (note.title === event.target.innerText) {
+            textArea.value = note.body
+        }
+    }
+}
+
+noteList.addEventListener("click", loadNote)
