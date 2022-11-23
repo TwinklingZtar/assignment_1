@@ -134,7 +134,12 @@ button{
     border-color: #652824;
     background-color: #652824;
 }
-
+.atagsDarkTheme{
+    color: rgb(144, 229, 238);
+}
+.atagsDarkTheme:visited{
+    color: lightgreen;
+}
 @media screen and (max-width: 500px) {
     body{
         grid-template-columns: 100%;

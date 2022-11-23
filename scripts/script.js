@@ -5,8 +5,9 @@ const textArea = document.querySelector("textarea")
 const newnoteButton = document.querySelector(".new_note_button")
 const saveButton = document.querySelector(".save_button")
 const cancelButton = document.querySelector(".cancel_button")
+const aTags = document.querySelectorAll("a")
 
-
+console.log(aTags)
 
 darkThemeButton.addEventListener("click", activateDarkMode)
 function activateDarkMode() {
@@ -18,6 +19,8 @@ function activateDarkMode() {
     newnoteButton.classList.toggle("newnotebuttonDarkTheme")
     saveButton.classList.toggle("savebuttonDarkTheme")
     cancelButton.classList.toggle("cancelbuttonDarkTheme")
+    aTags[0].classList.toggle('atagsDarkTheme')
+    aTags[1].classList.toggle('atagsDarkTheme')
 
     if (darkThemeButton.textContent === "Light Theme") {
         darkThemeButton.textContent = "Dark Theme"
@@ -41,3 +44,5 @@ function createNewNote() {
     textArea.removeAttribute("hidden")
     textArea.value = ""
 }
+
+
