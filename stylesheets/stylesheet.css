@@ -142,18 +142,16 @@ button{
 }
 @media screen and (max-width: 500px) {
     body{
-        grid-template-columns: 100%;
-        grid-template-rows: 3fr 1fr 1fr;
-        grid-auto-rows: 100px;
+        display: flex;
+        flex-direction: column;
         height: 100%;
     }
     aside{
         display: grid;
         grid-template-columns: 100%;
-        grid-template-rows: 60px;
+        grid-template-rows: 60px 70%;
         grid-auto-rows: 30px;
-        grid-column: 1/2;
-        grid-row: 2/3;
+        order: 1;
     }
     nav{
         flex-direction: column;
@@ -164,8 +162,9 @@ button{
         grid-row: 1/2;
     }
     footer{
-        grid-row: 3/4;
-        grid-column: 1/2;
+        order: 2;
     }
-
+    .note_list{
+        height: 100%;
+    }
 }
