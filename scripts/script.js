@@ -56,10 +56,14 @@ function hideTheStuff() {
 
 newnoteButton.addEventListener("click", createNewNote) 
 function createNewNote() {
+    if (textArea.hasAttribute("hidden") === false){
+        textArea.value = ""
+    }
+
     cancelButton.removeAttribute("hidden")
     saveButton.removeAttribute("hidden")
     textArea.removeAttribute("hidden")
-    textArea.value = ""
+
 }
 
 
