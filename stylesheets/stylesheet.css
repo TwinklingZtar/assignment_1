@@ -74,7 +74,7 @@ textarea{
 .save-cancel{
     display: flex;
     justify-content: flex-end;
-    margin: 5px;
+
 }
 footer{
     text-align: center;
@@ -93,11 +93,13 @@ background-color: #5394A0;
 
     border-color: #5394A0;
     background-color: #5394A0;
+    margin: 5px;
 
 }
 .cancel_button{
     border-color: #D9827C;
     background-color: #D9827C;
+    margin: 5px;
     
 }
 button{
