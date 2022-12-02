@@ -69,12 +69,12 @@ textarea{
     border-radius: 10px;
     border-color: #6F6A87;
     background-color: #6F6A87;
-    color: #F9F3EC;
     border-style: solid;
 }
 .save-cancel{
     display: flex;
     justify-content: flex-end;
+
 }
 footer{
     text-align: center;
@@ -85,7 +85,6 @@ footer{
 .new_note_button{
 border-color: #5394A0;
 background-color: #5394A0;
-color:#F9F3EC;
 }
 .docs_link{
     padding: 0px 10px;
@@ -94,13 +93,12 @@ color:#F9F3EC;
 
     border-color: #5394A0;
     background-color: #5394A0;
-    color:#F9F3EC;
     margin: 5px;
+
 }
 .cancel_button{
     border-color: #D9827C;
     background-color: #D9827C;
-    color: #F9F3EC;
     margin: 5px;
     
 }
@@ -108,22 +106,54 @@ button{
     padding: 10px 5px;
     border-radius: 10px;
     border-style: solid;
+    color: #F9F3EC;
 }
+.bodyDarkTheme{
+    background-color: #3f3528;
+    color: #a6caf3;
+}
+.asideDarkTheme{
+    background-color: #584c3c;
 
+}
+.textAreaDarkTheme{
+    background-color: rgb(89, 89, 89);
+    color: white;
+}
+.darkthemeDarkTheme{
+    border-color: #2d2942;
+    background-color: #2d2942;
+}
+.newnotebuttonDarkTheme{
+    border-color: #10414a;
+    background-color: #10414a;
+}
+.savebuttonDarkTheme{
+    border-color: #18525c;
+    background-color: #18525c;
+}
+.cancelbuttonDarkTheme{
+    border-color: #652824;
+    background-color: #652824;
+}
+.atagsDarkTheme{
+    color: rgb(144, 229, 238);
+}
+.atagsDarkTheme:visited{
+    color: lightgreen;
+}
 @media screen and (max-width: 500px) {
     body{
-        grid-template-columns: 100%;
-        grid-template-rows: 3fr 1fr 1fr;
-        grid-auto-rows: 100px;
+        display: flex;
+        flex-direction: column;
         height: 100%;
     }
     aside{
         display: grid;
         grid-template-columns: 100%;
-        grid-template-rows: 60px;
+        grid-template-rows: 60px 70%;
         grid-auto-rows: 30px;
-        grid-column: 1/2;
-        grid-row: 2/3;
+        order: 1;
     }
     nav{
         flex-direction: column;
@@ -134,8 +164,9 @@ button{
         grid-row: 1/2;
     }
     footer{
-        grid-row: 3/4;
-        grid-column: 1/2;
+        order: 2;
     }
-
+    .note_list{
+        height: 100%;
+    }
 }
